@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap');
+
+API KEY WEATHER
+431b61fc55f7c18cfdbffde8b5a24955
+
+
+
+http://api.openweathermap.org/data/2.5/weather?id=524901&appid=431b61fc55f7c18cfdbffde8b5a24955
+
+https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metrics&appid=431b61fc55f7c18cfdbffde8b5a24955
+
+
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid=431b61fc55f7c18cfdbffde8b5a24955
