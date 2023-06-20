@@ -1,2 +1,5 @@
 # Ignora archivos del sistema
 *.vscode
+
+# Ignora archivos de texto
+*.txt
