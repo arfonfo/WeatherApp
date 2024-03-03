@@ -9,6 +9,8 @@ const wrapper  = document.querySelector(".wrapper"),
 
     let api;
 
+    const apiKey = "431b61fc55f7c18cfdbffde8b5a24955";
+
     inputField.addEventListener("keyup", e =>{
         if (e.key == "Enter" && inputField.value != ""){
             requestApi(inputField.value);
@@ -25,13 +27,13 @@ const wrapper  = document.querySelector(".wrapper"),
     });
 
     function requestApi(city){
-        api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid="YOUR_API_ID"`;
+        api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
         fetchData();
     }
 
     function onSuccess(position){
         const{latitude, longitude} = position.coords;
-        api = `https://api.openweathermap.org/data/2.5/weather?&units=metric&lat=${latitude}&lon=${longitude}&appid="YOUR_API_ID"`;
+        api = `https://api.openweathermap.org/data/2.5/weather?&units=metric&lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
         fetchData();
     }
 
